@@ -1,0 +1,20 @@
+.formItem {
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form-signup-heading {
+    margin-bottom: 100px;
+    font-size: 48px;
+}
+
+.signupContainer {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    align-content: center;
+    background-color: rgb(245, 240, 217);
+}

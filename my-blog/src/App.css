@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  align-content: center;
+  background-color: rgb(172, 208, 231);
+}
+
+input {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  width: 350px;
+}
+
+label {
+  width: 200px;
+  margin-right: 40px;
+}
+
+button {
+  width: 200px;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
