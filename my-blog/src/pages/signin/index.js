@@ -53,7 +53,7 @@ function SignIn() {
         </div>
         
         <Link to={`signup`}><button className="btn btn-lg btn-primary btn-block" type="button"> Sign Up </button></Link>
-        <button className="btn btn-lg btn-primary btn-block" type="button" onClick={handleSubmit}> Sign In </button>
+        <button className="btn btn-lg btn-primary btn-block" type="submit"> Sign In </button>
         {error && <div className='error'>{error}</div>}
       </form>
     </div>

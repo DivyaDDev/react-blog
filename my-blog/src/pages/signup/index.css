@@ -18,3 +18,8 @@
     align-content: center;
     background-color: rgb(245, 240, 217);
 }
+.error {
+    color: red;
+    font-weight: 600;
+    margin-top: 30px;
+}
