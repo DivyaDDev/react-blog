@@ -11,21 +11,16 @@ function SignIn() {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
-    var myHeaders = new Headers();
-    myHeaders.append("Content-Type", "text/plain");
-
-    var raw = JSON.stringify({
-      email, password
-    })
+    var formdata = new FormData();
 
     var requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
+      method: 'GET',
+      body: formdata,
       redirect: 'follow'
     };
 
-    fetch("https://63b250a70d51f5b297272159.mockapi.io/api/v1/users", requestOptions)
+    const url = `http://localhost:5000/api/get/userprofilefromdb?email=${email}&pwd=${password}`
+    fetch(url, requestOptions)
       .then(response => response.text())
       .then(result => navigate("/landing"))
       .catch(error => setError('Something Went Wrong'));

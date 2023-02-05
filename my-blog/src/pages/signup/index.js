@@ -11,6 +11,25 @@ function SignUp() {
   const [error, setError] = useState('Something went wrong')
   const navigate = useNavigate();
 
+  //  const onSubmit = () => {
+  //     var axios = require('axios');
+
+  //     var config = {
+  //       method: 'post',
+  //       url: 'https://63b250a70d51f5b297272159.mockapi.io/api/v1/users',
+  //       headers: { }
+  //     };
+      
+  //     axios(config)
+  //     .then(function (response) {
+  //       // get access to the return data from the POST API endpoint
+  //       const data = response.data
+  //       navigate("/landing")
+  //     })
+  //     .catch(function (error) {
+  //       setError(error.message)
+  //     });
+  //   }
   const handleSubmit = () => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "text/plain");
